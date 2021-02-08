@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #cb0050;
+    --secondary: #ffed00;
+}
+body {
+    font-size: 10px;
+
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+
+    height: 40vh;
+    width: 110%;
+
+    position: relative;
+    top: -120px;
+    left: -30px;
+
+    transform: rotate(-4deg);
+
+    transition: all 500ms;
+
+
+    -webkit-box-shadow: 0px 119px 136px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 119px 136px 9px rgba(0,0,0,0.75);
+box-shadow: 0px 119px 136px 9px rgba(0,0,0,0.75);
+}
+.left-side {
+    width: 50%;
+    background-color: var(--primary);
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding: 1rem 0;
+
+}
+.right-side {
+    width: 50%;
+    background-color: var(--secondary);
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 2.5rem 0;
+}
+
+.right-side h1 {
+    color: var(--primary);
+}
+
+.star-head {
+    width: 1rem;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.star1 {
+    width: 1.4rem;
+    top: 48%;
+    left: 27%;
+}
+.star2 {
+    width: .6rem;
+    height: auto;
+    top: 60%;
+    left: 25%;
+}
+.star3 {
+    top: 60%;
+    left: 27%;
+}
+
+.text {
+    margin: 0 2rem;
+}
+.text h1 {
+    font-family:'Dancing Script', cursive;
+    font-size: clamp(3rem, 5vw, 5rem);
+}
+.text h2 {
+    
+    margin: 0 1.5rem;
+    font-weight: bold;
+    font-size: clamp(1rem, 3vw, 3rem);
+    position: relative;
+    top: 25px;
+}
+.right-side .text {
+    font-weight: bold;
+    font-size: clamp(1rem, 3vw, 2rem);
+    position: relative;
+    top: 15px;
+}
+
+
+/* Main seciton  */
+
+.main {
+ background: rgb(203,0,80);
+background: radial-gradient(circle, rgba(203,0,80,1) 0%, rgba(121,0,48,1) 73%);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -10;
+
+    width: 100%;
+    height: auto;
+}
+.main-data {
+    width: 70%;
+}
+.empty {
+    height: 40vh;
+}
+
+.main-heading {
+    color: white;
+    font-size: clamp(2.5rem, 3vw, 4rem);
+    font-weight: bold
+}
+.yellow-heading {
+    color: var(--secondary);
+    font-family:'Dancing Script', cursive;
+
+}
+
+.fork-img img {
+    margin: 2rem .6rem;
+}
+
+.form-control {
+    margin: 1rem 0 !important;
+}
+
+label {
+    color: white;
+    font-size: .7rem;
+    font-weight: bold;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+.labels {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+input[type=text] {
+    margin: .6rem 0;
+    border-radius: 100px;
+    
+    border: 2px solid var(--secondary);
+    outline: none;
+
+    font-size: .7rem;
+    -webkit-box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);
+box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);    
+    
+}
+
+input[type=radio] {
+    width: 3rem;
+    height: 1.2rem;
+}
+input[type=checkbox] {
+   width: 1.5rem;
+   height: 1.5rem;
+   position: relative;
+   top: -15px;
+   left: 90%;
+}
+
+
+.confirm-text {
+    color: white;
+    font-size: clamp(.4rem, .5rem , .7rem);
+}
+.file-text {
+    margin: 1rem 0;
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+input[type=file] {
+    width: 100%;
+    height: 2.4rem;
+    border: none;
+    border-radius: 0; 
+    padding: 0 !important;
+
+    -webkit-box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);
+box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75); 
+}
+
+input[type=file]::-webkit-file-upload-button {
+    width: 40%;
+    height: 100%;
+    font-size: .7rem;
+    margin: 0 15px 0px 0px;
+    border: none;
+    background-color: var(--secondary); 
+    transition: all 500ms;
+}
+input[type=file]::-webkit-file-upload-button:hover {
+    background-color: #e2d300;
+}
+
+button {
+    margin: 2rem 40% 10rem;
+    min-width: 50%;
+    max-width: 70%;
+    height:auto;
+    padding: 1rem;
+    
+    color: var(--primary);
+    font-size: clamp(.6rem, 3vw, 1.3rem);
+    font-weight: bold;
+
+    background-color: var(--secondary);
+
+    border-radius: 100px;
+    border: 1px solid white;
+    outline: none;
+
+    transition: all 500ms;
+}
+button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    transform: translateY(-5px);
+    outline: none;
+
+    -webkit-box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);
+box-shadow: 20px 16px 21px -9px rgba(0,0,0,0.75);  
+}
+button:active {
+    outline: none;
+    transform: translateY(0px);
+}
+
+
+.side-note {
+    position: relative;
+}
+.side-note img {
+    position: absolute;
+    z-index: -2;
+
+    width: clamp(100%, 10vw, 10rem);
+}
+.side-text {
+    margin: 3rem 0 0 1rem;
+    width: clamp(90%, 10vw, 5rem);
+}
+.side-heading {
+    font-family:'Dancing Script', cursive;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: var(--primary)
+}
+.side-text p {
+    font-size: clamp(1rem, 0px, 1rem);
+    font-weight: bold;
+}
+.pink {
+    color: var(--primary);
+}
+@media screen and (max-width:980px) {
+    .side-note {
+        display: none;
+    }
+    .form-check-inline {
+        margin-bottom: 1rem;
+    }
+}
+
+footer {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    bottom: -30px;
+}
+.footer-item a {
+    font-size: clamp(.8rem, 1vw, 1rem);
+    font-weight: bold;
+    color: var(--primary)
+}
+.footer-item img {
+    position: relative;
+    width:80%;
+    height: auto;
+    top: -40px;
+
+}
