@@ -293,6 +293,9 @@ button:active {
     }
     .main-data {
     width: 100%;
+    }
+    .first-two, .last-three {
+    display: block;
 }
 }
 
@@ -303,7 +306,7 @@ footer {
     bottom: -30px;
 }
 .footer-item a {
-    font-size: clamp(.8rem, 1vw, 1rem);
+    font-size: clamp(.5rem, 1vw, 1rem);
     font-weight: bold;
     color: var(--primary)
 }
@@ -316,4 +319,11 @@ footer {
 }
 .facebook {
     font-size: 2rem;
+}
+.first-two, .last-three {
+    display: flex;
+    justify-content: space-between;
+}
+.first-two li, .last-three li {
+    margin: 0 10px;
 }
